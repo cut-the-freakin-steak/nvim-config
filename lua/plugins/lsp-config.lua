@@ -18,7 +18,7 @@ return {
                 ensure_installed = {
                     "lua_ls",
                     "clangd",
-                    "pylyzer",
+                    "ruff",
                 },
             })
         end,
@@ -41,7 +41,7 @@ return {
             })
 
             -- python stuff
-            lspconfig.pylyzer.setup({
+            lspconfig.ruff.setup({
                 capabilities = capabilities,
             })
 

@@ -4,7 +4,7 @@
 return {
 	"nvimtools/none-ls.nvim",
     dependencies = {
-        -- necessary for some lsps, linters, and formatters
+        -- necessary for some linters, and formatters
         -- some stuff isn't included in standard none-ls so we need to add an extra
         -- require() from none-ls-extras
         "nvimtools/none-ls-extras.nvim"
