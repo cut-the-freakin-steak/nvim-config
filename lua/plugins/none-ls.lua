@@ -24,6 +24,7 @@ return {
                 null_ls.builtins.formatting.clang_format,
                 null_ls.builtins.diagnostics.trivy,
                 -- python stuff
+                require("none-ls.diagnostics.ruff"),
                 null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.isort,
 			},
