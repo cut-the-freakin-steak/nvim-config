@@ -19,6 +19,9 @@ vim.opt.rtp:prepend(lazypath)
 
 -- activates lazy
 require("lazy").setup("plugins")
+
 -- set up a file path that we'll store our wanted configurations in
 require("vim-options")
+
+require("lsp_signature").setup()
 
