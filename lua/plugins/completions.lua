@@ -15,6 +15,7 @@ return {
         opts = {
             hint_enable = false,
             close_timeout = 100,
+            floating_window_above_cur_line = false,
         },
     },
     {
