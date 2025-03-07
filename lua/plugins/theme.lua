@@ -1,17 +1,13 @@
 return {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000,
-    config = true,
-    opts = {
-        underline = false,
-        bold = false,
-        italic = {
-            strings = false,
-            emphasis = false,
-            comments = false,
-            operators = false,
-            folds = false,
-        },
-        strikethrough = true,
-    },
+    "luisiacc/gruvbox-baby",
+    config = function()
+        -- use the dark color pallete
+        vim.g.gruvbox_baby_background_color = "dark"
+        vim.g.gruvbox_baby_comment_style = "NONE"
+        vim.g.gruvbox_baby_keyword_style = "NONE"
+        vim.g.gruvbox_baby_string_style = "NONE"
+        vim.g.gruvbox_baby_function_style = "NONE"
+        vim.g.gruvbox_baby_variable_style = "NONE"
+        vim.g.gruvbox_baby_transparent_mode = "true"
+    end
 }
