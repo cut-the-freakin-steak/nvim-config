@@ -21,5 +21,8 @@ end)
 
 -- chooses what color theme nvim uses
 -- i use material deep ocean right now, its nice
-vim.cmd "colorscheme material"
+vim.o.background = "dark"
+vim.cmd("colorscheme gruvbox")
+
+vim.api.nvim_set_hl(0, "Normal", {guibg = NONE, ctermbg = NONE})
 

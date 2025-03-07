@@ -24,4 +24,3 @@ require("lazy").setup("plugins")
 require("vim-options")
 
 require("lsp_signature").setup()
-
