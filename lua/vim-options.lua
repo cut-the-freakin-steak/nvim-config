@@ -1,8 +1,8 @@
 -- tabs to 2 spaces
 vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
 
 -- turn on numbers on the left side of the editor
 vim.cmd("set number")
@@ -16,8 +16,12 @@ vim.opt.linebreak = true
 
 -- make system clipboard and nvim clipboard sync up
 vim.schedule(function()
-    vim.opt.clipboard = "unnamedplus"
+  vim.opt.clipboard = "unnamedplus"
 end)
+
+-- see full diagnostic message in case it goes out of screen bounds
+vim.keymap.set("n", "<leader>q", vim.diagnostic.open_float)
+vim.keymap.set("n", "<leader>gd", "<cmd>CompilerOpen<cr>")
 
 -- chooses what color theme nvim uses
 -- i use material deep ocean right now, its nice
