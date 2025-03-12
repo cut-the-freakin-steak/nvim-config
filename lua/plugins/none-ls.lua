@@ -25,8 +25,7 @@ return {
         null_ls.builtins.diagnostics.trivy,
         -- python stuff
         require("none-ls.diagnostics.ruff"),
-        null_ls.builtins.formatting.black,
-        null_ls.builtins.formatting.isort,
+        require("none-ls.formatting.ruff")
       },
     })
     -- press <space> then gf to auto-format the current file
