@@ -27,6 +27,6 @@ return {
   },
 
   config = function()
-    vim.keymap.set("n", "<C-n>", ":Neotree toggle filesystem reveal_force_cwd left<CR>", {})
+    vim.keymap.set("n", "<C-l>", ":Neotree toggle filesystem reveal_force_cwd left<CR>", {})
   end
 }
