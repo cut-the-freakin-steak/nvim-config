@@ -5,7 +5,14 @@ return {
     local config = require("nvim-treesitter.configs")
     config.setup({
       -- ensure_installed will turn on syntax highlighting for any languages inside of the table
-      ensure_installed = { "c", "lua", "python" },
+      ensure_installed = {
+        "c",
+        "lua",
+        "python",
+        "gdscript",
+        "gdshader",
+        "godot_resource",
+      },
       -- turns on code highlighting and indenting
       highlight = { enable = true },
       indent = { enable = true },

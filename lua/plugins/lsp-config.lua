@@ -76,6 +76,9 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
+      -- setup for gdscript lsp because its not in mason lmao
+      local capabilities = vim.lsp.protocol.make_client_capabilities()
+      require("lspconfig").gdscript.setup(capabilities)
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
       vim.keymap.set({ "n" }, "<space>ca", vim.lsp.buf.code_action, {})

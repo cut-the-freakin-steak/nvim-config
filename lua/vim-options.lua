@@ -3,6 +3,8 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+-- python buffoonery for 2 space tabs
+vim.cmd("let g:python_recommended_style = 0")
 
 -- turn on numbers on the left side of the editor
 vim.cmd("set number")
@@ -13,6 +15,13 @@ vim.opt.fillchars = { eob = " " }
 -- turn on word wrap, breaking at each word, and not in the middle of one
 vim.opt.wrap = true
 vim.opt.linebreak = true
+
+-- add functionality for godot stuff
+local godot_project_file = vim.fn.getcwd() .. "/project.godot"
+
+if godot_project_file then
+  vim.fn.serverstart "./godothost"
+end
 
 -- make system clipboard and nvim clipboard sync up
 vim.schedule(function()
