@@ -24,4 +24,4 @@ require("lazy").setup("plugins")
 require("vim-options")
 
 -- set up lsp signatures, which are the things that tell you function arguments in a little window
-require("lsp_signature").setup()
+-- require("lsp_signature").setup()

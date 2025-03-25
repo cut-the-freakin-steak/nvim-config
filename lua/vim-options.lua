@@ -17,11 +17,11 @@ vim.opt.wrap = true
 vim.opt.linebreak = true
 
 -- add functionality for godot stuff
-local godot_project_file = vim.fn.getcwd() .. "/project.godot"
-
-if godot_project_file then
-  vim.fn.serverstart "./godothost"
-end
+-- local godot_project_file = vim.fn.getcwd() .. "/project.godot"
+--
+-- if godot_project_file then
+--   vim.fn.serverstart "./godothost"
+-- end
 
 -- make system clipboard and nvim clipboard sync up
 vim.schedule(function()
@@ -29,13 +29,13 @@ vim.schedule(function()
 end)
 
 -- see full diagnostic message in case it goes out of screen bounds
-vim.keymap.set("n", "<leader>q", vim.diagnostic.open_float)
-vim.keymap.set("n", "<leader>gd", "<cmd>CompilerOpen<cr>")
+-- vim.keymap.set("n", "<leader>q", vim.diagnostic.open_float)
+-- vim.keymap.set("n", "<leader>gd", "<cmd>CompilerOpen<cr>")
 
 -- chooses what color theme nvim uses
--- i use material deep ocean right now, its nice
-vim.o.background = "dark"
-vim.cmd("colorscheme gruvbox-baby")
+-- i use gruvbox right now, its nice
+-- vim.o.background = "dark"
+-- vim.cmd("colorscheme gruvbox-baby")
 
-vim.api.nvim_set_hl(0, "Normal", {guibg = NONE, ctermbg = NONE})
+-- vim.api.nvim_set_hl(0, "Normal", {guibg = NONE, ctermbg = NONE})
 
