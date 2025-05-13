@@ -4,8 +4,7 @@ return {
   -- config = function()
   --   require("lualine").setup({
   --     options = {
-  --       -- theme = "material-stealth",
-  --       theme = "gruvbox-baby",
+  --       theme = "auto",
   --     }
   --   })
   -- end

@@ -22,6 +22,6 @@ return {
   --   },
   --   config = function()
   --     vim.keymap.set("n", "<leader>gd", "<cmd>CompilerOpen<cr>")
-  --   end
+  --   end,
   -- },
 }

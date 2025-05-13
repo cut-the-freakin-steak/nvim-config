@@ -9,6 +9,9 @@ vim.cmd("let g:python_recommended_style = 0")
 -- turn on numbers on the left side of the editor
 vim.cmd("set number")
 
+-- enable true color set insert mode cursor to block
+vim.cmd("set guicursor=i:block")
+
 -- get rid of the tildes at the bottom of the file
 vim.opt.fillchars = { eob = " " }
 
@@ -29,13 +32,12 @@ vim.schedule(function()
 end)
 
 -- see full diagnostic message in case it goes out of screen bounds
--- vim.keymap.set("n", "<leader>q", vim.diagnostic.open_float)
--- vim.keymap.set("n", "<leader>gd", "<cmd>CompilerOpen<cr>")
+vim.keymap.set("n", "<leader>q", vim.diagnostic.open_float)
+vim.keymap.set("n", "<leader>gd", "<cmd>CompilerOpen<cr>")
 
 -- chooses what color theme nvim uses
--- i use gruvbox right now, its nice
--- vim.o.background = "dark"
--- vim.cmd("colorscheme gruvbox-baby")
+-- i use catppuccin right now, its nice
+vim.o.background = "dark"
+-- vim.cmd.colorscheme "catppuccin-mocha"
 
 -- vim.api.nvim_set_hl(0, "Normal", {guibg = NONE, ctermbg = NONE})
-
